@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body {font-family: 'Noto Sans KR', sans-serif;}
+#loading {
+    width: 100%; height: 100%; top: 0px; 
+    left: 0px; position: fixed; display: block;
+    background-color: #49413E; z-index: 99; text-align: center;
+    background-image: url(../images/loading.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container{width: 90%; margin: 0 auto;}
+h2 {font-size: 30px; padding: 20px 0;}
+
+/* nav */
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%; height: 100%;
+    background: #fff; display: none;
+}
+nav .nav_t .contanier{
+    display: flex; justify-content: space-between;
+    width: 324px; margin: 0 auto;
+    height: 86px; align-items: center;
+}
+nav .nav_box {
+    background-color: #f5f5f5; border-top: 1px solid #ccc;
+    height: 100%;
+}
+nav .nav_box_tit {padding: 30px 0px 10px 40px; font-size: 20px;}
+nav .nav_box .contanier {  width: 324px; margin: 0 auto;}
+nav .nav_box .contanier ul {height: 100%}
+nav .nav_box ul li {height: 60px; line-height: 60px; font-size: 15px;}
+nav .nav_box ul li img {vertical-align: middle; padding-right: 20px;}
+
+
+
+
+
+/* main */
+header {
+    width: 100%; height: 78px; display: flex;
+    flex-direction: column; justify-content: space-between;
+    padding-top: 50px;
+}
+header .header_t {
+    font-size: 24px; font-weight: 900;
+    letter-spacing: 3px;
+    display: flex;  align-items: center;
+    justify-content: space-between;  width: 100%;
+    
+}
+header .header_t img {}
+header .header_t img:nth-last-of-type(1) {visibility: hidden;}
+header .header_b {
+    display: flex; justify-content: space-between;
+    width: 100%;
+}
+.bottom_menu {
+    width: 100%; height: 68px;
+    background-color: #49413E;
+    position: fixed; bottom: 0;
+    z-index: 100; 
+    font-size: 12px;
+}
+.bottom_menu ul.bottom_menu_inner {
+    display: flex;
+    justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+}
+.bottom_menu ul.bottom_menu_inner li {
+    color: #fff; position: relative;
+}
+.bottom_menu ul.bottom_menu_inner li:nth-child(-n+4) {padding-right: 30px;}
+.bottom_menu ul.bottom_menu_inner li:nth-child(-n+4)::after {
+    content: ""; display: block;
+    width: 4px; height: 4px; border-radius: 50%;
+    background: #fff;
+    position: absolute; left: 80%; top: 50%;
+
+}

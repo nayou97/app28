@@ -1,0 +1,52 @@
+@charset "utf-8";
+.stamp_box {
+    width: 100%; height: 480px;
+    border: 1px solid #d9d9d9;   
+    display: flex; flex-direction: column;
+    align-items: center; 
+    padding-top: 16px;
+    margin-bottom: 100px;
+}
+.stamp_box .stamp_border {
+    width: 292px; height: 184px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: flex; align-items: center;
+    justify-content: center;
+}
+.stamp_box .stamp_border .stamp_card {
+    width: 95%; height: 92%;
+    background: #FF8A3B;
+    border-radius: 4px;
+}
+.stamp_box .stamp_border .stamp_card ul {
+    width: 222px; height: 110px; display: flex;
+    justify-content: space-between; align-items: center;
+    flex-wrap: wrap; margin: 0 auto; padding-top: 20px;
+}
+.stamp_box .stamp_border .stamp_card ul li {
+    text-align: center;
+    line-height: 36px; height: 36px;
+    flex: 1 1 25%; position: relative;
+}
+.stamp_box .stamp_border .stamp_card ul li::after {
+    content: ""; display: block;
+    width: 28px; height: 28px;
+    background: #49413E; position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%); border-radius: 50%; 
+}
+.stamp_box .stamp_border .stamp_card ul li:last-child::after {
+    background: none;
+}
+.stamp_box .stamp_border .stamp_card ul li img {
+    z-index: 2; position: relative;
+}
+.stamp_box .stamp_border .stamp_card ul li:last-child img {padding-top: 6px;}
+.stamp_box .stamp_border .stamp_card em {
+    font-size: 11px; font-weight: 300; text-align: center; display: block;
+    padding-top: 6px;
+}
+.stamp_box>img {
+    padding: 20px 0 8px;
+}
+.stamp_box>p {font-size: 14px;}

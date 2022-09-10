@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.order_in {}
+.order_in .order_map {
+    background: url(../images/map.jpg) center center no-repeat;
+    width: 100%; height: 385px;
+    display: flex; justify-content: center;
+}
+.order_in .order_map .order_map_search_box {
+    width: 100%; height: 80px;
+    background: #f5f5f5; 
+    display: flex; justify-content: center;
+    padding-top: 20px; box-sizing: border-box;
+} 
+.order_in .order_map .order_map_search {
+    display: flex; justify-content: space-between;
+    width: 360px; height: 34px;
+    background: #fff; padding-left: 100px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+}
+.order_in .order_map .order_map_search li {
+    width: fit-content;
+}
+.order_in .order_map .order_map_search li p {
+    font-size: 13px; color: #C6C6C5;
+    text-align: center; line-height: 34px;
+}
+.order_in .order_map .order_map_search li i {
+    font-size: 12px; padding-right: 20px;
+    color: #999; line-height: 33px;
+}
+.order_in .order_list {width: 100%; height: 160px;}
+.order_in .order_list .order_list_t {
+    display: flex;
+    flex-direction: row; align-items: center;
+    justify-content: space-between;
+}
+.order_in .order_list .order_list_t .order_list_t_l {
+    display: flex; padding: 16px 0 12px 16px;
+    align-items: center;
+}
+.order_in .order_list .order_list_t .order_list_t_l p {padding-right: 5px;}
+.order_in .order_list .order_list_t .order_list_t_r {
+    display: flex; padding: 16px 0  16px 0 ;
+    font-size: 8px;
+    width: 40%; justify-content: flex-end;
+}
+.order_in .order_list .order_list_t .order_list_t_r li {
+    display: flex; width: 50%; position: relative;
+}
+.order_in .order_list .order_list_t .order_list_t_r li:first-child p::before {
+    width: 1px; height: 100%; position: absolute; right: 14%; top: 0;
+    background: #ccc; content: ""; display: block;
+}
+.order_in .order_list .order_list_t .order_list_t_r li img {
+    margin-right: 4px;
+}
+.order_in .order_list .order_list_b {
+    display: flex; font-size: 12px; padding-left: 16px;
+}
